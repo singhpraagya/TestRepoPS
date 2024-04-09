@@ -1,9 +1,9 @@
 {
-    "id": "did:web:mycraggyisland.com",
+    "id": "did:web:mycraggyisland.com:WebPath1",
     "@context": [
         "https://www.w3.org/ns/did/v1",
         {
-            "@base": "did:web:mycraggyisland.com"
+            "@base": "did:web:mycraggyisland.com:WebPath1"
         }
     ],
     "service": [
@@ -28,21 +28,21 @@
     ],
     "verificationMethod": [
         {
-            "id": "#541cea651088403d94a8c03bf19f39c1vcSigningKey-aa1de",
-            "controller": "did:web:mycraggyisland.com",
+            "id": "#ec29896e2dd24072909b5a0b8fbf75fdvcSigningKey-cc61c",
+            "controller": "did:web:mycraggyisland.com:WebPath1",
             "type": "JsonWebKey2020",
             "publicKeyJwk": {
                 "crv": "P-256",
                 "kty": "EC",
-                "x": "M6VnFVELtVbKqBvFowU-5_vRwMPx8drwQFTb-vjW_SI",
-                "y": "eERl8mIal9-bUyLN8P4wKTr60u0eSM7ypVEAuOUvk0o"
+                "x": "tY9SVyxPbzJFxaLwdQ45Q4QC1mSk3B1RI0Zr3JgNJMI",
+                "y": "-jsUss_NIR2mzB8yUNNZFxVduF60Gw-W1sf6CndeESU"
             }
         }
     ],
     "authentication": [
-        "#541cea651088403d94a8c03bf19f39c1vcSigningKey-aa1de"
+        "#ec29896e2dd24072909b5a0b8fbf75fdvcSigningKey-cc61c"
     ],
     "assertionMethod": [
-        "#541cea651088403d94a8c03bf19f39c1vcSigningKey-aa1de"
+        "#ec29896e2dd24072909b5a0b8fbf75fdvcSigningKey-cc61c"
     ]
 }
