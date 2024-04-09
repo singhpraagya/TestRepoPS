@@ -1,0 +1,48 @@
+{
+    "id": "did:web:mycraggyisland.com",
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        {
+            "@base": "did:web:mycraggyisland.com"
+        }
+    ],
+    "service": [
+        {
+            "id": "#linkeddomains",
+            "type": "LinkedDomains",
+            "serviceEndpoint": {
+                "origins": [
+                    "https://mycraggyisland.com/"
+                ]
+            }
+        },
+        {
+            "id": "#hub",
+            "type": "IdentityHub",
+            "serviceEndpoint": {
+                "instances": [
+                    "https://hub.did.msidentity.com/v1.0/619442a2-ca38-4eb7-b124-b3c806cb9bd9"
+                ]
+            }
+        }
+    ],
+    "verificationMethod": [
+        {
+            "id": "#541cea651088403d94a8c03bf19f39c1vcSigningKey-aa1de",
+            "controller": "did:web:mycraggyisland.com",
+            "type": "JsonWebKey2020",
+            "publicKeyJwk": {
+                "crv": "P-256",
+                "kty": "EC",
+                "x": "M6VnFVELtVbKqBvFowU-5_vRwMPx8drwQFTb-vjW_SI",
+                "y": "eERl8mIal9-bUyLN8P4wKTr60u0eSM7ypVEAuOUvk0o"
+            }
+        }
+    ],
+    "authentication": [
+        "#541cea651088403d94a8c03bf19f39c1vcSigningKey-aa1de"
+    ],
+    "assertionMethod": [
+        "#541cea651088403d94a8c03bf19f39c1vcSigningKey-aa1de"
+    ]
+}
